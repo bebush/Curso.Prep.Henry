@@ -112,7 +112,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return x&y;
+  return x%y;
 }
 
 function esPar(num) {
@@ -173,7 +173,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random(num);
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -184,10 +184,10 @@ function esPositivo(numero) {
   if (numero>0){
     return "Es positivo";
   }
-  else if(nuemro<0){
+  else if(numero<0){
     return "Es negativo";
   }
-  else if(numero=0){
+  else if(numero===0){
     return false;
   }
 }
@@ -202,7 +202,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
- var comb = nombre ,apellido;
+ var comb = nombre+" "+apellido;
   return comb;
 }
 
@@ -210,7 +210,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'hola',nombre+'!';
+  return 'Hola'+" "+nombre+'!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -230,7 +230,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-return ((base, altura)/2);
+return ((base*altura)/2);
 }
 
 
@@ -252,7 +252,7 @@ function esVocal(letra){
   return "Dato incorrecto";
   }
 if(letra==="a"||letra==="e"||letra==="i"||letra==="o"||letra==="u"){
-return 'Es Vocal';
+return 'Es vocal';
 }
 else{
   return "Dato incorrecto";
